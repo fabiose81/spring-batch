@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: utils-service
+
+server:
+  port: 8089
+ 
+app:
+  path: C:\\Users\\fabio.dossantosestre\\eclipse-workspace\\filesystem
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/

@@ -1,0 +1,21 @@
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:us="http://techprimers.com/spring-boot-soap-example">
+	<soapenv:Header />
+	<soapenv:Body>
+		<us:employeeRequest>
+			<us:employee>
+				<us:name>carlos</us:name>
+				<us:project>001</us:project>
+				<us:start>2018-11-07</us:start>
+				<us:end>2019-05-07</us:end>
+			</us:employee>
+			<us:employee>
+				<us:name>fabio</us:name>
+				<us:project>001</us:project>
+				<us:start>2018-11-07</us:start>
+				<us:end>2019-05-07</us:end>
+			</us:employee>
+		</us:employeeRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

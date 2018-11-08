@@ -1,0 +1,32 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://techprimers.com/spring-boot-soap-example"
+	targetNamespace="http://techprimers.com/spring-boot-soap-example"
+	elementFormDefault="qualified">
+
+	<xs:element name="employeeRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="employee" maxOccurs="unbounded"
+					type="tns:employee" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="employeeResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="msg" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="employee">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="project" type="xs:string" />
+			<xs:element name="start" type="xs:string" />
+			<xs:element name="end" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

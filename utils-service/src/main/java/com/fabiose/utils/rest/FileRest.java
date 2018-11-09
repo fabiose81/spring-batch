@@ -33,7 +33,7 @@ public class FileRest {
 		write(pathResource,entry.getBody());	
 	}
 	
-	private void write(final String pathResource, final String body) throws IOException, Exception{
+	public void write(final String pathResource, final String body) throws IOException, Exception{
 		Files.write(
 			      Paths.get(pathResource), 
 			      body.getBytes(), 

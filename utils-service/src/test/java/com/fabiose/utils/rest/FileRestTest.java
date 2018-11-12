@@ -76,5 +76,5 @@ public class FileRestTest {
 		responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestEntity, Entry.class);
 		assertThat(Integer.valueOf(responseEntity.getStatusCode().toString()), equalTo(HttpStatus.SC_OK)); 
 	}
-	
+
 }
